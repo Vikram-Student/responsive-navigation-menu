@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">DevStudio</a>
+
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+            ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+
+                <li class="dropdown">
+                    <button class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+                        Services <span aria-hidden="true">▾</span>
+                    </button>
+
+                    <ul class="dropdown-menu" id="services-menu">
+                        <li><a href="#web-development">Web Development</a></li>
+                        <li><a href="#ui-design">UI Design</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h1>Welcome to DevStudio</h1>
+        <p>A simple responsive navigation menu project.</p>
+    </main>
+</body>
+
+</html>
